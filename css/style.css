@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../img/bg-pattern-top.svg),
+                      url(../img/bg-pattern-bottom.svg);
+    background-color: #19a2ae;
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 44vh,left 50vw top 44vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 38rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.victor {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    top: 9rem;
+    left: 14rem;
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    margin-top: 7rem;
+}
+
+.container span {
+    font-weight: 400;
+    opacity: .6;
+    margin-left: 1rem;
+}
+
+.london {
+    opacity: .6;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.marks {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.mark h2 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+.mark p {
+    font-size: 1.1rem;
+    opacity: .6;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 380px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .victor {
+        left: 13rem;
+    }
+}
